@@ -6,13 +6,13 @@
 }
 
 body{
-    background: linear-gradient(to right, #7f8fcf, #6ec6ca);
+    background: linear-gradient(to right, #6783f1, #bbedf0);
     padding:40px;
 }
 
 .main-title{
     text-align:center;
-    color:white;
+    color:white;    
     margin-bottom:30px;
 }
 
@@ -31,7 +31,7 @@ body{
 
 h2{
     margin-bottom:20px;
-    color:#5a67d8;
+    color:#828ef8;
 }
 
 form{
