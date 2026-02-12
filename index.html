@@ -2,41 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Smart Event Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="eventForm">
+
+    <h1 class="main-title">🎯 Smart Event Dashboard</h1>
+
+    <div class="dashboard">
+
+        <!-- LEFT SIDE -->
+        <div class="eventForm cardBox">
+            <h2>Add New Event</h2>
+
             <form id="form">
-                <label for="eventTitle">EventTitle</label>
-                <input type="text" id="eventTitle"><br>
-                <label for="eventDate">EventDate</label>
-                <input type="date" id="eventDate"><br>
-                <label for="category">Category</label>
+                <label>Event Title</label>
+                <input type="text" id="eventTitle" required>
+
+                <label>Event Date</label>
+                <input type="date" id="eventDate" required>
+
+                <label>Category</label>
                 <select id="category">
-                    <option value="Conference">Conference</option>
-                    <option value="Workshop">Workshop</option>
-                    <option value="Meetup">Meetup</option>
-                    <option value="Webinar">Webinar</option>
-                    <option value="Social">Social</option>
-                </select><br>
-                <label for="description">Description</label>
-                <textarea id="description"></textarea><br>
-                <button type="submit">Add Event</button>
+                    <option>Conference</option>
+                    <option>Workshop</option>
+                    <option>Meetup</option>
+                    <option>Webinar</option>
+                    <option>Social</option>
+                </select>
+
+                <label>Description</label>
+                <textarea id="description"></textarea>
+
+                <button type="submit" class="primary-btn">Add Event</button>
             </form>
         </div>
-        <div class="events">
-            <button>Clear All Events</button>
-            <button>Add Sample Events</button>
+
+        <!-- RIGHT SIDE -->
+        <div class="events cardBox">
+            <h2>My Events</h2>
+
+            <div class="top-buttons">
+                <button id="clearBtn" class="secondary-btn">Clear All Events</button>
+                <button id="sampleBtn" class="secondary-btn">Add Sample Events</button>
+            </div>
+
             <div class="cards"></div>
-        </div>
-        <div class="dom">
-            You pressed: <div class="key"></div>
         </div>
     </div>
 
-    <script src="./script.js"></script>
+    <!-- DOM DEMO -->
+    <div class="dom cardBox">
+        <h2>DOM Manipulation Demo</h2>
+        <p>You pressed: <span class="key">None</span></p>
+    </div>
+
+<script src="script.js"></script>
 </body>
 </html>
