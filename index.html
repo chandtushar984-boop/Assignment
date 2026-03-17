@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Weather Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- App Title -->
+    <h1 style="color:white; margin-bottom:20px;">
+         Async Weather Tracker
+    </h1>
+
+    <!-- Top Section -->
+    <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
+        
+        <!-- Search + History -->
+        <div class="weatherForm">
+            <h3>Search City</h3>
+            <form id="form">
+                <input type="text" id="city" placeholder="Delhi, London..." required>
+                <button id="search" type="submit">Search</button>
+            </form>
+
+            <h3>Search History</h3>
+            <div class="historyBtn"></div>
+        </div>
+
+        <!-- Weather Info -->
+        <div class="info">
+            <h3>Weather Info</h3>
+            <p>Search a city to see weather</p>
+        </div>
+
+    </div>
+
+    <!-- Console Section -->
+    <div style="width: 840px; max-width: 95%;">
+        <h3 style="color:white;">Console – Event Loop</h3>
+        <div class="console"></div>
+    </div>
+
+    <script src="./new.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #4765e7;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.weatherForm, .info, .console {
+    background: #f1f1f1;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 400px;
+}
+
+.weatherForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#form {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #ff6b2c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e55a1f;
+}
+
+.historyBtn {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.historyBtn button {
+    background: #ff6b2c;
+    font-size: 12px;
+}
+
+.info {
+    min-height: 120px;
+}
+
+.console {
+    background: #4c6def;
+    color: #fff;
+    font-family: monospace;
+    font-size: 13px;
+    height: 120px;
+    overflow-y: auto;
+}
